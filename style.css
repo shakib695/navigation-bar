@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    text-align: center;
+    border-bottom: 1px solid red;
+
+    
+}
+
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+    
+
+}
+nav ul li a{
+    color: black;
+    padding: 15px 35px;
+    display: block;
+    
+}
+
+
+
+/* *SUBMENU */
+
+nav ul li .submenu{
+    position: absolute;
+    width: 200px;
+    color: black;
+    text-align: left;
+    border: 2px solid #ccc;
+    border-top: 3px solid orangered;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+ 
+}
+nav .parent:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+nav ul li.submenu{
+visibility: hidden;
+opacity: 0;
+
+
+}
+
+nav ul li:hover>.submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+nav ul li .submenu li{
+    display: block;
+
+}
+nav ul li .submenu li a{
+    border-bottom: 1px solid #ccc;
+}
+
+
+nav ul li .submenu li:hover a{
+    background-color: aqua
+}
+
+/* *submenu */
+
+    nav ul li.submenu{
+        position:absolute ;
+    }
+
+nav .sub-menu-parent{
+    background-color: aqua;
+    width: 170px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+nav .sub-menu-parent li{
+    display: block;
+}
+nav .sub-menu-parent_1:hover .sub-menu-parent{
+    visibility: visible;
+    opacity: 1;
+}
+nav .charset li{
+    display: block;
+}
+nav .charset{
+    background-color: #ccc;
+    width: 150px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+nav .parents:hover .charset{
+    visibility: visible;
+    opacity: 1;
+
+
+}
+nav .sub-sub-parent{
+    position: relative;
+}
+nav .sub-sub-menu{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+   
+}
+nav .sub-sub-parent:hover .sub-sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
